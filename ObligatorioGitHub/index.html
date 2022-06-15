@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Obligatorio</title>
+</head>
+
+<body>
+  <center>
+    <div id="login">
+      <br>
+      <p>Bienvenidos</p>
+      <input type="text" placeholder="Usuario/Local" id="idUsr"><br>
+      <input type="password" placeholder="Password" id="idPwd"><br>
+
+      <input type="button" value="Login" id="btnLogin"><br>
+      <div id="divLogin"></div><br>
+    </div>
+    <hr size="5px" color="white">
+    <div id="registro">
+      <p>¿Eres nuevo? Registrate aqui</p>
+      <input type="text" placeholder="Usuario" id="txtRegistroUsuario"><br>
+      <input type="password" placeholder="Password" id="txtRegistroPw"><br>
+
+      <input type="text" placeholder="Nombre" id="txtRegistroNombre"><br>
+      <input type="button" value="Registrarme" id="btnRegistroUsuario"><br>
+      <div id="divRegistro"></div>
+    </div>
+  </center>
+  <!--Aqui abajo va contenido local-->
+  <div id="contenidoLocal">
+    <p>Aca hay contenido relacionado con Perfil Local</p>
+    <div id="cabezal" class="clearfix">
+      <img id="logo" src="	https://shopihunter.com/wp-content/uploads/2020/05/419905755f2f7a4a8380cb29db9400c2.png"
+        alt="logo">
+      <ul id="navPrincipal">
+        <li>
+          <a>Menu</a>
+        </li>
+        <li>
+          <div id="contenido2">
+          <a>Estado reservas</a>
+        </div>
+        </li>
+        <li>
+          <div id="contenido3">
+          <a>Informacion estadistica</a>
+        </div>
+        </li>
+        <li>
+          <a id="btnLogoutLocal">Logout</a>
+        </li>
+      </ul>
+
+    </div><!-- FIN CABEZAL -->
+
+    <div id="contenido">
+      <div id="inicialUsuario">
+
+      </div>
+      <div id="inicialLocal">
+
+      </div>
+      
+      <div id="mostrarTabla"></div>
+      <div id="mostrarDatos"> </div>
+
+      <div id="pie">
+
+      </div><!-- FIN PIE -->
+
+    </div>
+  </div>
+
+  <!--Aqui abajo mostrar como es el login de Persona-->
+
+  <div id="contenidoPersona">
+    <p>Aca hay contenido relacionado con contenido Persona</p>
+    <div id="cabezal" class="clearfix">
+      <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/RPC-JP_Logo.png" alt="logo">
+      <ul id="navPrincipal">
+        <li>
+          <a>Estado de reservas</a>
+        </li>
+        <li>
+          <a>Informacion estadistica</a>
+        </li>
+        <li>
+          <a id="btnLogoutPersona">Logout</a>
+        </li>
+      </ul>
+
+      </ul>
+
+    </div><!-- FIN CABEZAL -->
+    <div id="contenido">
+      <div id="inicialUsuario">
+
+      </div>
+
+      <div id="filtros">
+        <select name="" id="slcTipo">
+          <option value="B">Ver todos</option>
+          <option value="Museo">Museo</option>
+          <option value="Teatro">Teatro</option>
+          <option value="Restaurante">Restaurante</option>
+        </select>
+        <input type="button" value="Filtrar" id="btnFiltrar">
+      </div>
+      <div id="tabla"></div>
+
+      <div id="mostrarDatosPersona"></div>
+      <div id="mostrarTablaPersona"></div>
+      <div id="tablaEstados"></div>
+
+
+      <!--FIN ELEMENTOS-->
+    </div><!-- FIN CONTENIDO -->
+    <div id="pie">
+      <a href="https://www.ort.edu.uy">Footer</a>
+    </div><!-- FIN PIE -->
+
+  </div>
+
+  <script src="js/carga.js"></script>
+  <script src="js/funciones.js"></script>
+  <script src="js/codigo.js"></script>
+</body>
+
+</html>
